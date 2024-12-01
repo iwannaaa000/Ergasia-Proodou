@@ -2,13 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #a23b9a7e;
 }
 
 header {
     background-color: #e75ae4;
-    color: white;
+    color: rgb(155, 13, 122);
     padding: 10px;
     text-align: center;
+}
+.pinakass{
+    text-align: center;
+    border-collapse: collapse;
+    background-color: #a23b9a7e;
+    border-color: #80104f;
 }
 
 nav ul {
@@ -52,7 +59,7 @@ form input, form textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #d343b4;
 }
 
 form input[type="submit"] {
@@ -67,10 +74,34 @@ form input[type="submit"]:hover {
 }
 
 .photoss {
-    width: 300px;
-    height: 200px;
-}
+    width: 300px;            
+    height: 250px;         
+    border: 5px solid #eb66e0; 
+    background: #8b3272;       
+    margin: auto;           
+    padding: 10px;        }
+    .photoss img {
+        width: 100%;   
+        height: auto;    
+    }  
 .videoo{
     width: 300px;
     height: 600px;
+}
+h2, h3{
+    color: #a52264; 
+}
+h4{
+    color: #80104f;
+}
+hr{
+    border: 0; 
+    height: 2px; 
+    background-color: #a52264; 
+} 
+.gender {
+    display: ;
+    
+    
+    
 }
