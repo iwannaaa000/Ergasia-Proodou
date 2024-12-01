@@ -21,33 +21,53 @@
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="bodyy">
+        <section class="container">
             <h2>Φόρμα Επικοινωνίας</h2>
-            <form action="#" method="POST" id="contactForm">
-                <label for="name">Όνομα (Υποχρεωτικό):</label>
-                <input type="text" id="name" name="name" required><br><br>
+            <form action="#" class="form">
+                <div class="input-box">
+                    <label for="name">Όνομα (Υποχρεωτικό): </label>
+                    <input type="text" id="name" name="name" placeholder="Εισάγεται το όνομα σας" required />
+                </div>
 
-                <label for="email">Email (Υποχρεωτικό):</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <div class="input-box">
+                    <label for="name"> Email (Υποχρεωτικό):</label>
+                    <input type="text" id="email" name="email" placeholder="Εισάγεται το email σας" required />
+                </div>
 
-                <label for="subject">Θέμα (Υποχρεωτικό):</label>
-                <input type="text" id="subject" name="subject" required><br><br>
+                <div class="input-box">
+                    <label for="name"> Θέμα (Υποχρεωτικό):</label>
+                    <input type="text" id="message" name="message" placeholder="Εισάγεται το θέμα σας" required />
+                </div>
 
-                <label for="message">Το μήνυμά σας (ελάχιστο 15 χαρακτήρες):</label>
-                <textarea id="message" name="message" required minlength="15"></textarea><br><br>
+                <div class="message-box">
+                    <div class="input-box">
+                        <label for="message">Το μήνυμά σας (ελάχιστο 15 χαρακτήρες):</label>
+                        <textarea id="message" name="message" required minlength="15"></textarea>
+                    </div>
+                </div>
 
-                <label for="age">Ηλικία (ελάχιστη τιμή 18):</label>
-                <input type="number" id="age" name="age" min="18"><br><br>
+                <div class="age-box">
+                    <h3>Ηλικία (ελάχιστη τιμή 18):</h3>
+                    <input type="number" id="age" name="age" min="18">
+                </div>
 
-                <label for="gender">Φύλο:</label>
-                <input type="radio" id="male" name="gender" value="Άνδρας">
-                <label for="male" class="gender">Άνδρας</label>
-                <input type="radio" id="female" name="gender" value="Γυναίκα">
-                <label for="female" class="gender">Γυναίκα</label>
+                <div class="gender-box">
+                    <h3>Φύλο</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <label for="check-male">Άνδρας</label>
+                            <input type="radio" id="check-male" name="gender" checked />
+                        </div>
+                        <div class="gender">
+                            <label for="check-female">Γυναίκα</label>
+                            <input type="radio" id="check-female" name="gender" />
+                        </div>
 
-                <br>
-                <input type="submit" value="Αποστολή Μηνύματος">
+                    </div>
+                </div>
+                </div>
+                <button>Submit</button>
             </form>
         </section>
     </main>
