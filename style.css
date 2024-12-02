@@ -5,11 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
-textarea {
-    resize: none;
-} 
+}
 
 body {
     font-family: "Ubuntu", sans-serif;
@@ -19,11 +16,38 @@ body {
 }
 
 header {
-    background-color: #e75ae4;
-    color: rgb(155, 13, 122);
-    padding: 10px;
+    background-image: url(giphy.gif);
+    background-color: #a23b9a7e;
+    padding: 60px;
     text-align: center;
     border-radius: 0px 0px 25px 25px;
+}
+
+h1 {
+    color: #efa2ea;
+    text-shadow:
+        1px 1px 0 #b35ca1,
+        2px 2px 0 #4d0c37,
+        3px 3px 0 #a82b76;
+    animation: colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(237, 113, 173);
+    }
+
+    33% {
+        color: rgb(186, 59, 228);
+    }
+
+    66% {
+        color: rgb(238, 79, 224);
+    }
+
+    100% {
+        color: rgb(251, 94, 139);
+    }
 }
 
 .pinakass {
@@ -91,6 +115,13 @@ main {
     padding: 10px;
 }
 
+.vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
 h2,
 h3 {
     color: #a52264;
@@ -120,7 +151,7 @@ hr {
     position: relative;
     max-width: 700px;
     width: 100%;
-    background: #d44d95;
+    background: #de87b6b1;
     border: 1px solid #935151;
     padding: 20px;
     border-radius: 25px;
@@ -142,6 +173,11 @@ hr {
 .form .input-box {
     width: 100%;
     margin-top: 20px;
+
+}
+
+textarea {
+    resize: none;
 }
 
 .input-box label {
@@ -231,4 +267,11 @@ hr {
     display: inline-block;
     border-bottom: 1px solid rgb(155, 13, 122);
     padding-bottom: 2px;
+}
+
+.exhghsh {
+    border-top: 3px solid #80104f;
+    border-bottom: 3px solid #80104f;
+    padding: 10px;
+    display: inline-block;
 }
