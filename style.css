@@ -23,13 +23,32 @@ header {
     text-align: center;
     border-radius: 0px 0px 25px 25px;
 }
-nav ul {
-    transition: transform 0.3s ease;
+nav {
+    position: relative; 
+}
 
+nav ul {
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    padding: 10px; 
 }
 
 nav ul:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.05); 
+}
+
+nav ul li {
+    display: inline-block; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #4d0c37; 
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #9a1741; 
+    cursor: pointer; 
 }
 
 
