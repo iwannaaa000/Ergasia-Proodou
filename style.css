@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    justify-content: space-between;
+    padding: 5px;
 }
 
 body {
@@ -22,8 +23,18 @@ header {
     text-align: center;
     border-radius: 0px 0px 25px 25px;
 }
+nav ul {
+    transition: transform 0.3s ease;
+
+}
+
+nav ul:hover {
+    transform: translateY(-10px);
+}
+
 
 h1 {
+    font-size: 50px;
     color: #efa2ea;
     text-shadow:
         1px 1px 0 #b35ca1,
