@@ -1,98 +1,19 @@
-@import url('https://www.fontsquirrel.com/fonts/computer-modern');
-
-.glitch-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .glitch {
-    position: relative;
-    font-size: 40px;
-    font-weight: bold;
-    color: #9d3a88;
-  }
-  
-  .glitch::before,
-  .glitch::after {
-    content: attr(data-glitch);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .glitch::before {
-    left: 2px;
-    text-shadow: -2px 0 #f90ebe;
-    clip: rect(44px, 450px, 56px, 0);
-    animation: glitch-anim 5s infinite linear alternate-reverse;
-  }
-  
-  .glitch::after {
-    left: -2px;
-    text-shadow: -2px 0 #f70a5d;
-    clip: rect(44px, 450px, 56px, 0);
-    animation: glitch-anim2 5s infinite linear alternate-reverse;
-  }
-  
-  @keyframes glitch-anim {
-    0% {
-      clip: rect(31px, 9999px, 94px, 0);
-      transform: skew(0.85deg);
-    }
-    5% {
-      clip: rect(70px, 9999px, 78px, 0);
-      transform: skew(0.85deg);
-    }
-    10% {
-      clip: rect(21px, 9999px, 59px, 0);
-      transform: skew(0.3deg);
-    }
-    /* Add more keyframes as needed */
-    100% {
-      clip: rect(91px, 9999px, 61px, 0);
-      transform: skew(0.63deg);
-    }
-  }
-  
-  @keyframes glitch-anim2 {
-    0% {
-      clip: rect(65px, 9999px, 99px, 0);
-      transform: skew(0.13deg);
-    }
-    5% {
-      clip: rect(32px, 9999px, 54px, 0);
-      transform: skew(0.6deg);
-    }
-    10% {
-      clip: rect(94px, 9999px, 75px, 0);
-      transform: skew(0.97deg);
-    }
-    /* Add more keyframes as needed */
-    100% {
-      clip: rect(90px, 9999px, 67px, 0);
-      transform: skew(0.4deg);
-    }
-  }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    justify-content: space-between;
     padding: 1px;
+    font-family: 'Georgia', serif;
+}
+
+main {
+    padding: 20px;
 }
 
 body {
-    font-family: "Ubuntu", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #a23b9a7e;
+    background-color: #FFE6F7;
 }
 
 header {
@@ -101,44 +22,134 @@ header {
     padding: 60px;
     text-align: center;
     border-radius: 0px 0px 25px 25px;
+    border: 1px solid #433878;
 }
-nav {
-    position: relative; 
-}
-
-nav ul {
-    transition: transform 0.3s ease, background-color 0.3s ease; 
-    padding: 10px; 
-}
-
-nav ul:hover {
-    transform: translateY(-10px) scale(1.05); 
-}
-
-nav ul li {
-    display: inline-block; 
-}
-
-nav ul li a {
-    text-decoration: none; 
-    color: #4d0c37; 
-    transition: color 0.3s ease; 
-}
-
-nav ul li a:hover {
-    color: #9a1741; 
-    cursor: pointer; 
-}
-
 
 h1 {
-    font-size: 50px;
-    color: #efa2ea;
+    color: #433878;
     text-shadow:
         1px 1px 0 #b35ca1,
         2px 2px 0 #4d0c37,
         3px 3px 0 #a82b76;
     animation: colorChange 3s linear infinite;
+}
+
+h2,
+h3 
+h4 {
+    color: #433878;
+}
+
+.glitch-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.glitch {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    color: #9d3a88;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #f90ebe;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 #f70a5d;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim2 5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% {
+        clip: rect(31px, 9999px, 94px, 0);
+        transform: skew(0.85deg);
+    }
+
+    5% {
+        clip: rect(70px, 9999px, 78px, 0);
+        transform: skew(0.85deg);
+    }
+
+    10% {
+        clip: rect(21px, 9999px, 59px, 0);
+        transform: skew(0.3deg);
+    }
+
+    100% {
+        clip: rect(91px, 9999px, 61px, 0);
+        transform: skew(0.63deg);
+    }
+}
+
+@keyframes glitch-anim2 {
+    0% {
+        clip: rect(65px, 9999px, 99px, 0);
+        transform: skew(0.13deg);
+    }
+
+    5% {
+        clip: rect(32px, 9999px, 54px, 0);
+        transform: skew(0.6deg);
+    }
+
+    10% {
+        clip: rect(94px, 9999px, 75px, 0);
+        transform: skew(0.97deg);
+    }
+
+    100% {
+        clip: rect(90px, 9999px, 67px, 0);
+        transform: skew(0.4deg);
+    }
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+}
+
+nav ul:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4d0c37;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9a1741;
+    cursor: pointer;
 }
 
 @keyframes colorChange {
@@ -162,7 +173,7 @@ h1 {
 .pinakass {
     text-align: center;
     border-collapse: collapse;
-    background-color: #a23b9a7e;
+    background-color: #FFABE1;
     border-color: #80104f;
 }
 
@@ -186,17 +197,13 @@ a:hover {
     text-decoration: underline;
 }
 
-main {
-    padding: 20px;
-}
-
 .picss {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
 }
 
-.photoss:hover{
+.photoss:hover {
     transform: scale(1.5);
 }
 
@@ -209,8 +216,6 @@ main {
     padding: 10px;
     border-radius: 10px;
     transition: transform 0.3s ease;
-
-
 }
 
 .photoss img {
@@ -234,15 +239,13 @@ main {
     justify-content: center;
     align-items: center;
     height: 75vh;
+    margin-top: 30px;
 }
 
 h2,
-h3 {
-    color: #a52264;
-}
-
+h3 
 h4 {
-    color: #80104f;
+    color: #433878;
 }
 
 hr {
@@ -265,7 +268,7 @@ hr {
     position: relative;
     max-width: 700px;
     width: 100%;
-    background: #de87b6b1;
+    background: #FFABE1;
     border: 1px solid #935151;
     padding: 20px;
     border-radius: 25px;
@@ -274,14 +277,18 @@ hr {
 
 .container h2 {
     font-size: 1.5rem;
-    color: rgb(155, 13, 122);
-    ;
-    font-weight: 500;
+    color: #433878;
+    font-weight: 600;
     text-align: center;
 }
 
 .container .form {
     margin-top: 30px;
+}
+
+.form .full-name {
+    display: flex;
+    column-gap: 15px;
 }
 
 .form .input-box {
@@ -298,7 +305,7 @@ textarea {
     color: #333;
 }
 
-.form :where(.input-box input, .message-box textarea, .age-box imput) {
+.form :where(.input-box input, .message-box textarea, #age) {
     position: relative;
     height: 50px;
     width: 100%;
@@ -308,7 +315,7 @@ textarea {
     margin-top: 8px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    padding: 0 15px;
+    padding: 15px;
 }
 
 .input-box input:focus {
@@ -321,18 +328,8 @@ textarea {
     margin-top: 20px;
 }
 
-.age-box h3 {
-    color: #333;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 8px;
-}
-
-.gender-box h3 {
-    color: #333;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 8px;
+.message-text {
+    text-align: bottom;
 }
 
 .form :where(.gender-option, .gender) {
@@ -346,22 +343,22 @@ textarea {
     column-gap: 5px;
 }
 
+.gender-option {
+    margin-top: 2.5px;
+}
+
 .gender input {
-    accent-color: #642ca9;
+    accent-color: #433878;
 }
 
 .form :where(.gender input, .gender label) {
     cursor: pointer;
 }
 
-.gender label {
-    color: #333;
-}
-
 .form button {
     height: 55px;
     width: 100%;
-    color: rgb(155, 13, 122);
+    color: #433878;
     background-color: #e75ae4;
     font-size: 1rem;
     font-weight: 400;
@@ -385,8 +382,8 @@ textarea {
 }
 
 .exhghsh {
-    border-top: 3px solid #80104f;
-    border-bottom: 3px solid #80104f;
+    border-top: 3px solid #C689C6;
+    border-bottom: 3px solid #C689C6;
     padding: 10px;
     display: inline-block;
 }

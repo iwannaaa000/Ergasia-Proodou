@@ -25,45 +25,52 @@
         <section class="container">
             <h2>Φόρμα Επικοινωνίας</h2>
             <form action="#" class="form">
-                <div class="input-box">
-                    <label for="name">Όνομα (Υποχρεωτικό): </label>
-                    <input type="text" id="name" name="name" placeholder="Εισάγεται το όνομα σας" required />
+                <div class="full-name">
+                    <div class="input-box">
+                        <label for="name">Όνομα (Υποχρεωτικό): </label>
+                        <input type="text" id="name" name="name" placeholder="Εισάγεται το όνομα σας" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="name">Επίθετο (Υποχρεωτικό): </label>
+                        <input type="text" id="name" name="name" placeholder="Εισάγεται το επίθετο σας" required>
+                    </div>
                 </div>
 
                 <div class="input-box">
-                    <label for="name"> Email (Υποχρεωτικό):</label>
-                    <input type="text" id="email" name="email" placeholder="Εισάγεται το email σας" required />
+                    <label for="name"> E-mail (Υποχρεωτικό):</label>
+                    <input type="text" id="email" name="email" placeholder="Εισάγεται το e-mail σας" required>
                 </div>
 
                 <div class="input-box">
                     <label for="name"> Θέμα (Υποχρεωτικό):</label>
-                    <input type="text" id="message" name="message" placeholder="Εισάγεται το θέμα σας" required />
+                    <input type="text" id="message" name="message" placeholder="Εισάγεται το θέμα σας" required>
                 </div>
 
                 <div class="message-box">
                     <div class="input-box">
                         <label for="message">Το μήνυμά σας (ελάχιστο 15 χαρακτήρες):</label>
-                        <textarea id="message" name="message" required minlength="15"></textarea>
+                        <textarea id="message" name="message" required minlength="15"
+                            placeholder="Εισάγεται το μήνυμα σας" reguired></textarea>
                     </div>
                 </div>
 
                 <div class="age-box">
-                    <h3>Ηλικία (ελάχιστη τιμή 18):</h3>
-                    <input type="number" id="age" name="age" min="18">
+                    <label for="message">Ηλικία (Πρέπει να είσται τουλάχιστον 18 χρονών):</label>
+                    <input type="number" id="age" name="age" value="18" min="18">
                 </div>
 
                 <div class="gender-box">
-                    <h3>Φύλο</h3>
+                    <label for="message">Φύλο:</label>
                     <div class="gender-option">
                         <div class="gender">
-                            <label for="check-male">Άνδρας</label>
-                            <input type="radio" id="check-male" name="gender" checked />
+                            <label for="check-female">Γυναίκα</label>
+                            <input type="radio" id="check-female" name="gender">
                         </div>
                         <div class="gender">
-                            <label for="check-female">Γυναίκα</label>
-                            <input type="radio" id="check-female" name="gender" />
+                            <label for="check-male">Άνδρας</label>
+                            <input type="radio" id="check-male" name="gender">
                         </div>
-
                     </div>
                 </div>
                 </div>
