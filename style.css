@@ -13,7 +13,7 @@ main {
 body {
     margin: 0;
     padding: 0;
-    background-color: #FFE6F7;
+    background-color: #F2F9FF;
 }
 
 header {
@@ -22,22 +22,16 @@ header {
     padding: 60px;
     text-align: center;
     border-radius: 0px 0px 25px 25px;
-    border: 1px solid #433878;
+    border: 1px solid #E195AB;
 }
 
 h1 {
-    color: #433878;
+    color: #E195AB;
     text-shadow:
         1px 1px 0 #b35ca1,
         2px 2px 0 #4d0c37,
         3px 3px 0 #a82b76;
     animation: colorChange 3s linear infinite;
-}
-
-h2,
-h3 
-h4 {
-    color: #433878;
 }
 
 .glitch-wrapper {
@@ -51,7 +45,6 @@ h4 {
 
 .glitch {
     position: relative;
-    font-size: 40px;
     font-weight: bold;
     color: #9d3a88;
 }
@@ -243,9 +236,12 @@ a:hover {
 }
 
 h2,
-h3 
+h3 {
+    color: #AA5486;
+}
+
 h4 {
-    color: #433878;
+    color: #8b1848 ;
 }
 
 hr {
@@ -268,7 +264,7 @@ hr {
     position: relative;
     max-width: 700px;
     width: 100%;
-    background: #FFABE1;
+    background: #7925629e;
     border: 1px solid #935151;
     padding: 20px;
     border-radius: 25px;
@@ -277,7 +273,7 @@ hr {
 
 .container h2 {
     font-size: 1.5rem;
-    color: #433878;
+    color: #E195AB;
     font-weight: 600;
     text-align: center;
 }
@@ -302,7 +298,7 @@ textarea {
 }
 
 .input-box label {
-    color: #333;
+    color: #000000;
 }
 
 .form :where(.input-box input, .message-box textarea, #age) {
